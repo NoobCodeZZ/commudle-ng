@@ -3,7 +3,7 @@
 }
 .toggle {
   fa-icon {
-    @apply com-text-xl;
+    @apply com-text-sm com-flex com-text-black com-items-center com-justify-center com-w-5 com-h-5 com-cursor-pointer;
   }
 }
 .sidebar {
@@ -48,7 +48,7 @@
 
     .header {
       h1 {
-        @apply com-flex com-ml-0 com-cursor-pointer com-justify-center;
+        @apply com-text-base com-flex com-ml-0;
       }
       .toggle {
         @apply com-ml-auto;
@@ -57,7 +57,7 @@
   }
 
   .header {
-    @apply com-bg-white com-text-black com-flex com-items-center com-justify-center com-p-2;
+    @apply com-m-4 com-mb-6 com-bg-white com-text-black com-flex com-items-center com-justify-center com-py-2;
 
     h1 {
       @apply com-hidden com-text-xl com-m-0 com-flex-1;

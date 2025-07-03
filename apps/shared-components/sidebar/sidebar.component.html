@@ -26,7 +26,7 @@
       {{ heading }}
     </h1>
     <div *ngIf="showExpandedButton" class="toggle" (click)="handleSidebarToggle()">
-      <fa-icon [icon]="expandSidebar || isExpanded ? faCaretLeft : faBars" class="com-cursor-pointer"></fa-icon>
+      <fa-icon [icon]="expandSidebar || isExpanded ? faRightLeft : faRightLeft" class="com-cursor-pointer"></fa-icon>
     </div>
   </div>
   <ng-content></ng-content>

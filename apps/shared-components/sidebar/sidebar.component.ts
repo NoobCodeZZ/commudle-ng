@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faBars, faCaretLeft } from '@fortawesome/free-solid-svg-icons';
+import { faRightLeft } from '@fortawesome/free-solid-svg-icons';
 import { SidebarService } from 'apps/shared-components/sidebar/service/sidebar.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -36,8 +36,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
   private documentClickListener?: (event: MouseEvent) => void;
 
   //font-awesome icons
-  faCaretLeft = faCaretLeft;
-  faBars = faBars;
+  faRightLeft = faRightLeft;
 
   constructor(private sidebarService: SidebarService) {}
 

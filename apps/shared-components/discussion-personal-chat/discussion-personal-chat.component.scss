@@ -1,11 +1,11 @@
 :host {
-  @apply com-h-full;
+  @apply com-flex com-min-h-0 com-flex-col com-flex-grow;
 
   .discussion-chat-component {
-    @apply com-h-full com-relative;
+    @apply com-flex-grow com-min-h-0 com-flex com-flex-col com-relative;
 
     .messages {
-      @apply com-h-full;
+      @apply com-min-h-0 com-flex-grow com-overflow-y-auto;
 
       .message {
         @apply com-p-0 com-px-3;
@@ -22,7 +22,7 @@
     }
 
     .send-message-form {
-      @apply com-bg-white com-sticky com-bottom-0 com-w-full;
+      @apply com-bg-white com-shrink-0 com-sticky com-bottom-0 com-w-full;
 
       form {
         align-items: self-start;

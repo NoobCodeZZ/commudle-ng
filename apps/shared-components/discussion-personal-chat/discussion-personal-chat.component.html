@@ -23,22 +23,21 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="send-message-form">
+    <commudle-editor
+      *ngIf="currentUser && !blocked"
+      [editable]="true"
+      [placeholder]="'Type Here'"
+      [status]="'info'"
+      [appearance]="'filled'"
+      (contentChange)="sendMessage($event)"
+      [validators]="validators"
+    ></commudle-editor>
+    <p *ngIf="currentUser && blocked" class="blocked-text">You have blocked this User</p>
 
-    <div class="send-message-form">
-      <commudle-editor
-        *ngIf="currentUser && !blocked"
-        [editable]="true"
-        [placeholder]="'Type Here'"
-        [status]="'info'"
-        [appearance]="'filled'"
-        (contentChange)="sendMessage($event)"
-        [validators]="validators"
-      ></commudle-editor>
-      <p *ngIf="currentUser && blocked" class="blocked-text">You have blocked this User</p>
-
-      <button *ngIf="!currentUser" nbButton fullWidth status="primary" class="login-button" (click)="login()">
-        Post a Message
-      </button>
-    </div>
+    <button *ngIf="!currentUser" nbButton fullWidth status="primary" class="login-button" (click)="login()">
+      Post a Message
+    </button>
   </div>
 </div>

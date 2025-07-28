@@ -14,7 +14,7 @@
 
     nb-card-body {
       transition: all 0.2s ease-in-out;
-      @apply com-grid com-p-0;
+      @apply com-flex com-flex-col com-overflow-hidden com-p-0;
     }
   }
 }
